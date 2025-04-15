@@ -1,0 +1,55 @@
+1. Syntax Errors Highlighted by IntelliJ (Red Underlines)
+• Type: Compile-Time Errors
+• Description: These errors are detected by the IntelliJ IDE before the code is compiled. They include issues like incorrect syntax, missing semicolons, type mismatches, undeclared variables, and other violations of the Java language rules.
+• Example: Forgetting a closing parenthesis or misspelling a keyword like public as publc.
+• Resolution: Fixing the highlighted code based on IntelliJ's suggestions or error messages.
+2. Errors in the Console When Running the Spring Boot Application
+• Type: Run-Time Errors
+• Description: Even after successful compilation (i.e., no syntax errors), your application might encounter issues during execution. These errors occur while the application is running and can be due to various reasons such as:
+• Configuration Issues: Incorrect settings in application properties or missing configuration files.
+• Dependency Problems: Missing or incompatible library versions.
+• Resource Access Problems: Issues accessing databases, files, or external services.
+• Initialization Failures: Errors during the startup phase, such as bean creation failures in Spring.
+• Example: A NullPointerException when the application tries to access a bean that wasn't properly initialized, or a BeanCreationException due to misconfigured Spring components.
+• Resolution: Analyze the stack trace and error messages in the console to identify and fix the underlying issue. This might involve correcting configuration files, ensuring all dependencies are correctly included, or handling null values appropriately.
+3. Errors When Hitting the API Endpoints
+• Type: Run-Time Errors
+• Description: These errors occur during the execution of your application when a client makes a request to one of your API endpoints. They can be triggered by:
+• Unhandled Exceptions: Situations like dividing by zero, accessing an invalid index in a list, or other unforeseen runtime conditions.
+• Logic Errors: Flaws in the application logic that lead to incorrect behavior or responses.
+• Invalid Inputs: Receiving unexpected or malformed data from the client.
+• External Service Failures: Issues when your API depends on external services or databases that fail or return unexpected results.
+• Example: A 400 Bad Request response due to validation failures, a 500 Internal Server Error because of an unhandled exception in the controller, or timeouts when calling an external API.
+• Resolution: Implement proper exception handling using Spring's @ControllerAdvice and @ExceptionHandler, validate incoming data, ensure robust logic in your service layers, and handle external dependencies gracefully. Logging detailed error information can also aid in diagnosing and fixing these issues.
+
+
+
+Java is plateform independent but JVM is plateform dependent i..e, same java code can run on ios,windows,linux .the only condition is it should have jvm installed 
+
+JRE=JVM+ library(java standard library . It contains all the classes in java.lang package string,math,exception,variables etc.it also contains java.utils which has list,map etc
+JVM is used to run java programs
+JDK=JRE+compiler+source code of libraries (which are present in JRE)+debugger+JAR and much more
+
+
+
+Since java is a object oriented so you need class to do anything so just make a class in any Hello.java file. Now tm jo v file de rhe ho usme main method hona chahiye kyunki main method is entery point use baad jo jo function call ho rha h wo sb kr lega but main m,ethod dena parega.
+javac Hello.java ---> this command is using java compiler(javac) to convert your code in bytecode. Tm dekh skte ho jaise hi compile hua ek nayi file bn gayi Hello.class. Ab iss compiled code ko JVM run kr dega. For that command is java Hello--> iss baar bus class nam dena parta because JVM compiled code ko use krega Hello.class nam se jo bna h
+JVM make sure that your program runs instead of whatever OS(windows,linux , macoS etc) you are using. It handles memory and garbage collection autmaticaaly. It handles multi threading if your program uses it. It does security checks
+So JRE runs your program with the help of JVM and Java standard library
+JDK(java development kit) is everything you need to write run debug modify any java program.
+
+--> why we needed docker and kubernetes  and the beauty of of their architecture
+
+
+--> why kafka was needed and difference between kafka and traditional database
+
+-->servlet , spring and springboot evolution
+Difference between DB and DBMS
+Exact boundarys of jdbc hibernate and spring data jpa
+Why springbooot needs tomcat server
+What is difference between WAR and JAR`
+@Bean and @Autowired and bean of a method
+
+
+
+
